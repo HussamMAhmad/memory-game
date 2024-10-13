@@ -1,0 +1,7 @@
+
+[1] - music in background 
+[2] - timer for game and popup for resete
+[3] - store the data for player in localstorage
+    and create leaderboard under the game for info 
+[4] - increase the number of blocks 
+[5] - generate the blocks in javascript 

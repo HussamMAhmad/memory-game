@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+    <div class="info-container">
+        <div class="name">Hello : <span></span></div>
+        <div class="timer"></div>
+        <div class="tries">Wrong Tries : <span>0</span></div>
+    </div>
+
+    <div class="memory-game-block">
+        <div class="game-block" data-games="hitman">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/7-2-hitman-png-file-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="hitman">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/7-2-hitman-png-file-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="minecraft">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/19-2-minecraft-characters-png-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="minecraft">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/19-2-minecraft-characters-png-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="pokeball">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20148-3-pokeball-file-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="pokeball">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20148-3-pokeball-file-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="grandV">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20226-7-grand-theft-auto-v-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="grandV">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20226-7-grand-theft-auto-v-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="assassins">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20672-9-altair-assassins-creed-transparent-thumb.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-games="assassins">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20672-9-altair-assassins-creed-transparent-thumb.png" alt="" />
+            </div>
+        </div>
+        <div class="game-block" data-games="mario">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20698-7-mario-transparent-background-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="mario">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20698-7-mario-transparent-background-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="sonic">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20905-6-sonic-the-hedgehog-transparent-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="sonic">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/20905-6-sonic-the-hedgehog-transparent-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="gta-san-andreas">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/28666-6-gta-san-andreas-photo-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="gta-san-andreas">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/28666-6-gta-san-andreas-photo-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="counter">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/8-2-counter-strike-png-image-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="counter">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/8-2-counter-strike-png-image-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="dark-souls">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/8-2-dark-souls-png-picture-thumb.png" alt="" /></div>
+        </div>
+        <div class="game-block" data-games="dark-souls">
+            <div class="face front"></div>
+            <div class="face back"><img src="images/8-2-dark-souls-png-picture-thumb.png" alt="" /></div>
+        </div>
+    </div>
+    <div class="results">
+        <div class="info">
+            <span>Name</span>
+            <span>Time</span>
+            <span>Wrong Tries</span>
+            <span>Delete</span>
+        </div>
+    </div>
+    <audio id="fail" src="music/fail-234710.mp3" preload="auto"></audio>
+    <audio id="success" src="music/success-1-6297.mp3" preload="auto"></audio>
+    <audio id="background" src="music/Stardew Valley OST - Mines (The Lava Dwellers).mp3" preload="auto"></audio>
+    <audio id="game-over" src="music/videogame-death-sound-43894.mp3" preload="auto"></audio>
+    <audio id="game-win" src="music/piglevelwin2mp3-14800.mp3"></audio>
+    <script src="index.js"></script>
+</body>
+
+</html>

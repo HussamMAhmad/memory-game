@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.control-buttons {
+  width: 100%;
+  height: 100%;
+  background-color: #00bcd4d1;
+  position: fixed;
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+}
+.control-buttons span {
+  position: absolute;
+  padding: 15px 25px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #F44336;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.info-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f6f6f6;
+  width: 1080px;
+  border: 2px solid #00bcd4;
+  display: flex;
+}
+.info-container .name {
+  width: 50%;
+  text-align: left;
+  font-size: 18px;
+  float: left;
+}
+.info-container .timer {
+  width: 200px ;
+  font-weight: bold;
+  color: #F44336 ;
+  font-size: 20px ;
+  text-align: center;
+}
+.info-container .tries {
+  width: 50%;
+  font-size: 18px;
+  text-align: right;
+  float: right;
+}
+.memory-game-block {
+  margin: 10px auto;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.memory-game-block.no-click{
+  pointer-events: none;
+}
+.memory-game-block .game-block {
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  height: 200px;
+  width: 200px;
+}
+.memory-game-block .game-block .front::before {
+  content: "?";
+  font-size: 140px;
+  font-weight: bold;
+  color: white;
+}
+.memory-game-block .game-block .front {
+  background-color: #333;
+  line-height: 180px;
+}
+.memory-game-block .game-block .back {
+  background-color: gray;
+  transform: rotateY(180deg);
+}
+.memory-game-block .game-block .back img {
+  width: 190px;
+  height: 190px;
+}
+.memory-game-block .game-block.is-flip,
+.memory-game-block .game-block.has-match {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg); 
+  pointer-events: none;
+}
+.memory-game-block .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 5px solid #00bcd4;
+  text-align: center;
+}
+.pop-fail,
+.pop-win{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5 ;
+  background-color: #0000008a;
+  top: 0;
+  left: 0;
+}
+.pop-fail .pop,
+.pop-win .pop{
+  position: absolute;
+  width: 400px ;
+  background-color: #fff; 
+  border-radius: 10px ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  padding: 60px ;
+}
+.pop-fail .pop p,
+.pop-win .pop p{
+  font-size: 30px ;
+  color: black;
+  margin: 0px 0px 40px 0px;
+}
+.pop-fail .pop span,
+.pop-win .pop span{
+  padding: 10px 20px ;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  font-size: 30px ;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pop-fail .pop span{
+  background-color: #cf2518 ;
+}
+.pop-win .pop span{
+  background-color: green;
+}
+.results {
+  width: 1100px;
+  margin: 20px auto;
+  border-top: 3px solid #333;
+  padding-top: 30px;
+}
+.results span{
+  width: 200px;
+}
+.results > div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px ;
+}
+.results .info span{
+  font-size: 25px ;
+  font-weight: bold;
+  padding: 10px 20px ;
+  color: white;
+  background-color:#00bcd4; 
+  border-radius: 6px;
+  text-align: center;
+}
+.results .name span{
+  font-size: 20px ;
+  padding: 10px 20px;
+  color: #2196F3;
+  text-align: center;
+}
+.results .name .delete{
+  background-color: #F44336;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
